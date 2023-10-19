@@ -2,7 +2,7 @@ body {background-color: #edf0f5;}
 div {
     border-radius: 5px;
     width: 50%;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     padding: 30px 15px;
 }
