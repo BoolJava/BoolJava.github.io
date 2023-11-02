@@ -17,3 +17,11 @@ div {
     padding: 15px;
     border-radius: 10px;
 }
+#bbutton {
+    color: white;
+    background: blueviolet;
+    font-size: 24px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px; /* round corners */
+}
