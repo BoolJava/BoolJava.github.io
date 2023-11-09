@@ -10,7 +10,7 @@
     <input type="number" id="numB" name="numB">
     <input type="number" id="numC" name="numC">
     <button onclick="calc()">Calculate</button>
-    <p id="out"></p>
+    <p id="output"></p>
 
     <script>
         function calc() {
@@ -21,10 +21,10 @@
             var C = document.getElementById("NumC").value;
             C = Number(C);
 
-            var proot = (-B + Math.sqrt(B**2 - 4 * A * C)) / 2 * A;
-            var nroot = (-B - Math.sqrt(B**2 - 4 * A * C)) / 2 * A;
+            var proot = (-B + Math.sqrt(B ** 2 - 4 * A * C)) / 2 * A;
+            var nroot = (-B - Math.sqrt(B ** 2 - 4 * A * C)) / 2 * A;
 
-            var out = document.getElementById("out");
+            var out = document.getElementById("output");
             out.innerHTML = proot + "     " + nroot;
         }
     </script>
