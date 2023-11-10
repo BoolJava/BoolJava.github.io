@@ -15,7 +15,14 @@
     <script>
         function calc() {
             var KWH = document.getElementById("KWH").value;
-            
+            var KWH = Number(KWH);
+            var cpr = 0.0475
+            var bsr = KWH * cpr;
+            var src = .10 * bsr;
+            var ctx = .03 * bsr;
+            var pta = bsr + src + ctx;
+            var lpp = .04 * pta;
+            var pdd = pta + lpp;
         }
     </script>
 </body>
