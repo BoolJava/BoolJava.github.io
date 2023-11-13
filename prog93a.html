@@ -23,7 +23,15 @@
             var pta = bsr + src + ctx;
             var lpp = .04 * pta;
             var pdd = pta + lpp;
-            
+
+            var p = document.getElementById("output");
+            p.innerHTML = "";
+            p.innerHTML += "Kilowatts Used: " + KWH + "<br/>";
+            p.innerHTML += "Base Rate: " + dif + "<br/>";
+            p.innerHTML += "Prd: " + prd + "<br/>";
+            p.innerHTML += "Avg: " + avg + "<br/>";
+            p.innerHTML += "Abs: " + abs + "<br/>";
+            p.innerHTML += "Max: " + max + "<br/>";
         }
     </script>
 </body>
