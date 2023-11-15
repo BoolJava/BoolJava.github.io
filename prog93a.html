@@ -26,12 +26,12 @@
 
             var p = document.getElementById("output");
             p.innerHTML = "";
-            p.innerHTML += "Kilowatts Used: " + KWH + "<br/>";
-            p.innerHTML += "Base Rate: " + dif + "<br/>";
-            p.innerHTML += "Prd: " + prd + "<br/>";
-            p.innerHTML += "Avg: " + avg + "<br/>";
-            p.innerHTML += "Abs: " + abs + "<br/>";
-            p.innerHTML += "Max: " + max + "<br/>";
+            p.innerHTML += "Kilowatts Used: " + KWH.toFixed(2) + "<br/>";
+            p.innerHTML += "Base Rate: " + bsr.toFixed(2) + "<br/>";
+            p.innerHTML += "Surcharge: " + src.toFixed(2) + "<br/>";
+            p.innerHTML += "Citytax: " + ctx.toFixed(2) + "<br/>";
+            p.innerHTML += "Pay this amount: " + pta.toFixed(2) + "<br/>";
+            p.innerHTML += "After May 20th Pay: " + pdd.toFixed(2) + "<br/>";
         }
     </script>
 </body>
