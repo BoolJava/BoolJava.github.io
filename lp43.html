@@ -13,12 +13,22 @@
 
     <script>
         function price() {
-            var copies = Number(document.getElementById("eggs").value);
+            var eggs = Number(document.getElementById("eggs").value);
             var dozens = Math.floor(eggs / 12);
             var remainder = eggs % 12;
             var price = 0.0;
             var total = 0.0;
             var p = document.getElementById("output");
+
+            if (dozens >= 0 && dozens <= 3) {
+                price = 0.50;
+            } else if (dozens >= 4 && dozens <= 5) {
+                price = 0.45;
+            } else if (dozens >= 6 && dozens <= 10) {
+                price = 0.40;
+            } else if (dozens >= 11) {
+                price = 0.35;
+            }
 
         }
     </script>
