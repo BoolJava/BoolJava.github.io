@@ -12,7 +12,7 @@
     <p id="output"></p>
 
     <script>
-        function price() {
+        function calculate() {
             var eggs = Number(document.getElementById("eggs").value);
             var dozens = Math.floor(eggs / 12);
             var remainder = eggs % 12;
@@ -34,7 +34,7 @@
 
             if (price > 0) {
                 total = (price * dozens) + (remainder * (1/12 * price));
-                out.innerHTML = "The bill is equal to: $" + total.toFixed(2);
+                p.innerHTML = "The bill is equal to: $" + total.toFixed(2);
             }
 
         }
