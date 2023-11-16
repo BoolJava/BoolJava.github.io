@@ -28,6 +28,13 @@
                 price = 0.40;
             } else if (dozens >= 11) {
                 price = 0.35;
+            } else {
+                p.innerHTML = "Invalid number of eggs"
+            }
+
+            if (price > 0) {
+                total = (price * dozens) + (remainder * (1/12 * price));
+                out.innerHTML = "The bill is equal to: $" + total.toFixed(2);
             }
 
         }
