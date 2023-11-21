@@ -1,9 +1,9 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
-}
-div {
+    font-size: 18;
     text-align: left;
+}
+p {
     background-color: darkgray;
     color: gainsboro;
-}
+ }
