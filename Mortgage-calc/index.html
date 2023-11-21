@@ -6,16 +6,19 @@
     <title>Mortgage calc</title>
 </head>
 <body>
-    <label for="principal">Principal: </label>
+   <div>
+    <label for="principal">Principal: </label> <br/>
     <input type="number" id="principal" name="principal" min="0"> <br/>
-    <label for="interest rate">Interest Rate as%: </label>
+    <label for="interest rate">Interest Rate as%: </label> <br/>
     <input type="number" id="interest rate" name="interest rate" min="0"> <br/>
-    <label for="num of years">Number of Years: </label>
+    <label for="num of years">Number of Years: </label> <br/>
     <input type="number" id="num of years" name="num of years" min="0"> <br/>
-    <label for="monthly pay">Monthly Payment: </label>
+    <label for="monthly pay">Monthly Payment: </label> <br/>
     <input type="number" id="monthly pay" name="monthly pay" min="0"> <br/>
     <button onclick="calc()">Calculate</button>
     <p id="out"></p>
+   </div>
+
 
 </body>
 </html>
