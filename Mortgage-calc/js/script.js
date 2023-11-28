@@ -1,4 +1,4 @@
-function doMath() {
+function calc() {
     var prp = Number(document.getElementById("principal").value);
     var r = Number(document.getElementById("interest rate").value);
     var nmy = Number(document.getElementById("num of years").value);
