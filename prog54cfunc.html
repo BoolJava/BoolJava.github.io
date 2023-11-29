@@ -17,7 +17,21 @@
         function reset() {
             document.getElementById("rad").value = "";
             document.getElementById("out").innerHTML = "";
-            
+        }
+
+        function getArea(radius) {
+            return Math.PI * radius**2;
+        }
+
+        function getCircumference(radius) {
+            return 2 * Math.PI * radius;
+        }
+
+        function calc() {
+            var rad = Number(document.getElementById("rad").value);
+            var area = getArea(rad);
+            var ccm = getCircumference(rad);
+            document.getElementById("out").innerHTML = "Area: " + area + "<br/>Circumference: " + ccm;
         }
     </script>
 </body>
