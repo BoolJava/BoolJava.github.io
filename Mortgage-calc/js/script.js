@@ -14,3 +14,11 @@ function calc() {
     p.innerHTML = "";
     p.innerHTML += "Remaining loan balance: " + B.toFixed(2) + "<br/>";
 }
+
+function reset() {
+    document.getElementById("principal").value = "";
+    document.getElementById("interest rate").value = "";
+    document.getElementById("num of years").value = "";
+    document.getElementById("monthly pay").value = "";
+    document.getElementById("out").innerHTML = "";
+}
