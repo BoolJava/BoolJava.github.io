@@ -6,7 +6,7 @@ function calc() {
     var inr = r / 100
     var n = 12
     var top = mnp * [(1 + (inr/n)) ** (n * nmy) -1]
-    var bot = irn/n
+    var bot = inr/n
     var res = prp * (1 + (inr/n)) ** (n * nmy)
     var B = res - (top/bot)
 
