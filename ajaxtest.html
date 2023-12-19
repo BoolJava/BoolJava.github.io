@@ -19,7 +19,8 @@
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("demo").innerHTML = this.responseText;
+                    document.getElementById("demo").innerHTML
+                            = this.responseText;
                 }
             };
             xhttp.open("GET", "ajax.txt", true);
@@ -28,12 +29,13 @@
 
         function pageLoad() {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "https://raw.githubusercontent.com/typicode/demo/master/db.json");
+            xhr.open("GET",
+                "https://raw.githubusercontent.com/typicode/demo/master/db.json");
             xhr.responseType = "json";
             xhr.send();
             xhr.onload = function() {
                 if (xhr.status != 200) {
-                    alert('Error ${xhr.status}: ${xhr.statusText}');
+                    alert(`Error ${xhr.status}: ${xhr.statusText}`);
                 } else {
                     var response = xhr.response;
                     var posts = response.posts;
@@ -43,20 +45,20 @@
                     var html = "";
                     for (var i = 0; i < posts.length; i++) {
                         var post = posts[i];
-                        html += '<h2>${post.title}</h2>';
-                        html += '<p>${post.id}</p>';
+                        html += `<h2>${post.title}</h2>`;
+                        html += `<p>${post.id}</p>`;
                     }
                     document.getElementById("posts").innerHTML = html;
 
                     html = "";
                     for (var i = 0; i < comments.length; i++) {
-                        var comment = comment[i];
-                        html += '<h3>Comment #${comment.id}-${comment.postId}</h3>';
-                        html += '<p>${comment.body}</p>';
+                        var comment = comments[i];
+                        html += `<h3>Comment #${comment.id}-${comment.postId}</h3>`;
+                        html += `<p>${comment.body}</p>`;
                     }
                     document.getElementById("comments").innerHTML = html;
 
-                    html = '<h1>${profile.name}</h1>';
+                    html = `<h1>${profile.name}</h1>`;
                     document.getElementById("profile").innerHTML = html;
                 }
             };
