@@ -49,7 +49,6 @@
 
         <input type="email" name="email" id="email" placeholder="Your Email" required> <br/><br/>
         <input type="email" name="email" id="email" placeholder="re-enter Email" required> <br/><br/>
-        <input type="text" name="first_name" size="15" maxlength="100" placeholder="New Password"> <br/><br/>
 
                <div>
                    <br><br>
@@ -57,11 +56,23 @@
                    <label for="male" class="gdrslt">Male</label>
                    <input type="radio" name="gender" id="female" value="female" />
                    <label for="female" class="gdrslt">Female</label> <br/><br/>
-                   <p>By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you <br>
-                       have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a>. </p>
+                   <p></p>
                </div>
-               <button type="Sign Up" value="Sign Up" id="sbutton"/>
 
+               <label for="subject">Subject:</label> <br/>
+            <input type="text" name="subject" id="subject" required> <br/><br/>
+
+            <label for="tbody">Message:</label><br/>
+            <textarea name="tbody" id="tbody" placeholder="Enter message..."
+                      required></textarea> <br/><br/>
+
+                <label for="flwup">Do you want a follow-up email?</label> <br/>
+                <input type="radio" name="flwup" id="flwupy" value="yes" />
+                <label for="flwupy" class="flwlbl">Yes</label>
+                <input type="radio" name="flwup" id="flwupn" value="no" />
+                <label for="flwupn" class="flwlbl">No</label> <br/><br/>
+
+               <button type="Send" value="Send" id="sbutton">Reach out!</button>
        </form>
 </body>
 </html>
